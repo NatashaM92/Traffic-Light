@@ -42,10 +42,12 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmD-9q-zxn">
-                                <rect key="frame" x="178" y="811" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmD-9q-zxn">
+                                <rect key="frame" x="159" y="800" width="112" height="48"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="sbg-UR-iH0"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START">
@@ -56,8 +58,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="LmD-9q-zxn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGh-lu-ya1"/>
                             <constraint firstItem="LqO-43-ALO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="TLt-IO-vfx"/>
                             <constraint firstItem="LqO-43-ALO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZIh-1V-TdB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LmD-9q-zxn" secondAttribute="bottom" constant="50" id="omh-w6-KRa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LqO-43-ALO" secondAttribute="bottom" constant="203" id="ydt-t0-JaT"/>
                         </constraints>
                     </view>
