@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var redLightView: UIView!
     @IBOutlet var yellowLightView: UIView!
     @IBOutlet var greenLightView: UIView!
@@ -23,14 +23,26 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-    
     
     @IBAction func startButtonDidTapped() {
-        redLightView.alpha = 1
+        startButton.setTitle("NEXT", for: .normal)
         
+        if redLightView.alpha != 1 && yellowLightView.alpha != 1 {
+            redLightView.alpha = 1
+           greenLightView.alpha = 0.3
+            
+        } else if yellowLightView.alpha != 1 {
+            redLightView.alpha = 0.3
+            yellowLightView.alpha = 1
+            
+        } else if greenLightView.alpha != 1 {
+            yellowLightView.alpha = 0.3
+            greenLightView.alpha = 1
+        }
     }
-    
 }
+
+
+    
 
